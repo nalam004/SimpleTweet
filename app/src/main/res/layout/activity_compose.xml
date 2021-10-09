@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".ComposeActivity">
+
+    <EditText
+        android:id="@+id/etCompose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/What_s_happening"
+        android:inputType="textMultiLine"
+        android:minLines="5"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#888E8B8B"
+        android:textColorHint="#BFBFBF"
+        android:textColorLink="#DF4242"
+        android:backgroundTint="#1DA1F2"/>
+
+    <Button
+        android:id="@+id/btnTweet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etCompose"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#1DA1F2"
+        android:text="@string/tweet"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/tvChar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etCompose"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/_0"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/tvCharLimit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etCompose"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@+id/tvChar"
+        android:text="@string/_280"
+        android:textColor="#FFFFFF" />
+
+
+</RelativeLayout>
